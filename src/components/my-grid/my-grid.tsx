@@ -44,11 +44,6 @@ export class MyGrid {
         })}
       </div>
     );
-    return (
-      <div class="wrapper">
-        <h1>Stencil - Grid Component</h1>
-        {this.pictures.length ? mainContent : messageBlock}
-      </div>
-    );
+    return <div class="wrapper">{this.pictures.length ? mainContent : messageBlock}</div>;
   }
 }
