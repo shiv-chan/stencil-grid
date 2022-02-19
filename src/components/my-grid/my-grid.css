@@ -1,0 +1,38 @@
+h1 {
+  margin: 3rem 0;
+  text-align: center;
+}
+
+#message {
+  font-weight: bold;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: fit-content;
+  padding: 2rem;
+}
+
+.container {
+  margin: 1rem auto;
+  padding: 0 1rem;
+  display: grid;
+  grid-template-columns: 100%;
+  grid-auto-rows: 500px;
+  gap: 2rem;
+  max-width: 400px;
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 800px;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .container {
+    max-width: 1400px;
+    grid-template-columns: repeat(4, 1fr);
+  }
+}

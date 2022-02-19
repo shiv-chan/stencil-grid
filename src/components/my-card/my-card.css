@@ -1,0 +1,44 @@
+.card {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 50% 10% 35%;
+  border-radius: 5px;
+  box-shadow: 0 0 3rem 0.5rem gray;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  gap: 1rem;
+}
+
+.card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.card-header {
+  padding: 0 2rem;
+  align-self: center;
+}
+
+.card-header h2 {
+  font-size: 1rem;
+  margin: 0;
+}
+
+.card-header p {
+  font-size: 0.8rem;
+  margin: 0;
+  color: gray;
+}
+
+.card-content {
+  font-size: 0.8rem;
+  margin: 0;
+  margin: 0 2rem 2rem;
+  overflow: scroll;
+}
+
+.card-content::-webkit-scrollbar {
+  display: none;
+}
